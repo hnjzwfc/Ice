@@ -8,7 +8,7 @@
 
 ### 全局配置：
 
-* [QuantumultX.conf](https://raw.githubusercontent.com/KuGouGo/Ice/master/QuantumultX.conf)
+* [QuantumultX.conf](https://raw.githubusercontent.com/KuGouGo/Ice/Monster/QuantumultX.conf)
 
 
 ### 本地配置：
@@ -20,11 +20,11 @@
 
 * 挂载[视频教程](https://m.youtube.com/watch?t=3s&v=inCQFnDmRLo)
 
-* [Js_local_WorkingCopy.conf](https://raw.githubusercontent.com/KuGouGo/Ice/master/Js_local_WorkingCopy.conf) 脚本订阅.
+* [Js_local_WorkingCopy.conf](https://raw.githubusercontent.com/KuGouGo/Ice/Monster/Js_local_WorkingCopy.conf) 脚本订阅.
 
-* [Get_Cookie_New.conf](https://raw.githubusercontent.com/KuGouGo/Ice/master/Get_Cookie_New.conf) 获取Cookie.
+* [Get_Cookie_New.conf](https://raw.githubusercontent.com/KuGouGo/Ice/Monster/Get_Cookie_New.conf) 获取Cookie.
 
-* [Task_Local.conf](https://raw.githubusercontent.com/KuGouGo/Ice/master/Task_Local.conf) 定时任务配置,目前无法订阅,请手动根据个人需求复制内容及修改时间.
+* [Task_Local.conf](https://raw.githubusercontent.com/KuGouGo/Ice/Monster/Task_Local.conf) 定时任务配置,目前无法订阅,请手动根据个人需求复制内容及修改时间.
 
 
 ## 免责声明：
