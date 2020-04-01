@@ -3,7 +3,7 @@ const __conf = String.raw`
 
 [eval_remote]
 // custom remote...
-https://raw.githubusercontent.com/KuGouGo/Ice/master/Js.conf
+https://raw.githubusercontent.com/KuGouGo/Ice/Monster/Js.conf
 
 [eval_local]
 // custom local...
