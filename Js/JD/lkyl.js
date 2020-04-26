@@ -3,7 +3,7 @@
 获取Cookie方法:
 1.将下方[rewrite_local]和[MITM]地址复制的相应的区域
 下，
-2.微信搜索'来客有礼'小程序,登陆京东账号，点击'发现',即可获取Cookie.
+2.微信搜索'来客有礼'小程序,登陆京东账号，点击'领京豆->翻牌',即可获取Cookie. 
 3.当日签过到需次日获取Cookie.
 4. 4月26日更新，每日视频运行一次增加一次银币，未加入银豆兑换京豆功能，需手动
 5.非专业人士制作，欢迎各位大佬提出宝贵意见和指导
@@ -174,7 +174,7 @@ function award() {
 (k=0;result.data.homeActivities[k].participated ==false;k++)
   {  if (k<=3) {
        lotteryId = result.data.homeActivities[k].activityId
-        let awardurl = {
+        let awardurl = {  
         url: `https://draw.jdfcloud.com//api/lottery/participate?lotteryId=${lotteryId}&openId=${openid}&formId=123&source=HOME&appId=${appid}`,headers: JSON.parse(signheaderVal)}
    sy.post(awardurl, (error, response, data) =>{
      sy.log(`${cookieName}, data: ${data}`)
@@ -233,8 +233,8 @@ function total() {
       subTitle += `${result.datas[k-1].memo}(手动)`
       }
      }
-   } else if (SilverBean < 20)
-    {
+   } else if (SilverBean < 20) 
+    { 
     subTitle += `  银豆不足以兑换京豆`
     }
     sy.msg(title+res, subTitle, detail)
