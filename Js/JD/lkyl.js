@@ -3,7 +3,7 @@
 获取Cookie方法:
 1.将下方[rewrite_local]和[MITM]地址复制的相应的区域
 下，
-2.微信搜索'来客有礼'小程序,登陆京东账号，点击'发现',即可获取Cookie.
+2.微信搜索'来客有礼'小程序,登陆京东账号，点击'发现',即可获取Cookie. 
 3.当日签过到需次日获取Cookie.
 4. 4月26日更新，每日视频运行一次增加一次银币，未加入银豆兑换京豆功能，需手动
 5.非专业人士制作，欢迎各位大佬提出宝贵意见和指导
@@ -17,8 +17,7 @@ Surge 4.0 :
 lkyl.js = type=cron,cronexp=35 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js,script-update-interval=0
 
 # 来客有礼 Cookie.
-lkyl.js = script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js,type=http-request,pattern=https:\/\/draw\.jdfcloud\.com\/\/api\/bean\/square\/silverBean\/task\/get\?
-
+lkyl.js = type=http-request,pattern=https:\/\/draw\.jdfcloud\.com\/\/api\/bean\/square\/silverBean\/task\/get\?,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js,
 ~~~~~~~~~~~~~~~~
 QX 1.0.5+ :
 [task_local]
@@ -45,7 +44,7 @@ let isGetCookie = typeof $request !== 'undefined'
 if (isGetCookie) {
    GetCookie()
 } else {
-   sign()
+   sign() 
 }
 function GetCookie() {
 const requrl = $request.url
@@ -111,7 +110,7 @@ function video() {
     let videotaskurl = {
 	 url: `https://draw.jdfcloud.com//api/bean/square/silverBean/taskReward/get?openId=${openid}&taskCode=watch_video&inviterOpenId=&appId=${appid}`,headers: JSON.parse(signheaderVal)}
     videotaskurl.headers['Content-Length'] = `0`;
-    sy.get(videotaskurl, (error, response, data) => {
+    sy.get(videotaskurl, (error, response, data) => { 
      //sy.log(`${cookieName}, data: ${data}`)})
      })
   lottery()
@@ -154,7 +153,7 @@ function award() {
         if (Incomplete < 3){
           for (k=0;k < result.data.homeActivities.length && Incomplete<=3;k++){
         lotteryId = result.data.homeActivities[k].activityId
-    let awardurl = {
+    let awardurl = {  
         url: `https://draw.jdfcloud.com//api/lottery/participate?lotteryId=${lotteryId}&openId=${openid}&formId=123&source=HOME&appId=${appid}`,headers: JSON.parse(signheaderVal)}
    sy.post(awardurl, (error, response, data) =>{
      //sy.log(`${cookieName}, 抽奖任务: ${data}`)
@@ -167,10 +166,10 @@ function award() {
     resolve()
     })
   }
+  
 
-
-
-
+  
+  
 function bean() {
 return new Promise((resolve, reject) => {
  let beanurl = {
@@ -215,8 +214,8 @@ function total() {
      {
       subTitle += `${result.datas[k-1].memo}(手动兑换)`}
     }
-   } else if (SilverBean < result.datas[0].salePrice)
-    {
+   } else if (SilverBean < result.datas[0].salePrice) 
+    { 
     subTitle += `  银豆不足以兑换京豆`
     }
     sy.msg(title+res, subTitle, detail)
