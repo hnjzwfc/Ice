@@ -1,24 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
-
-@KuGouGo
-yichahucha
-/
-surge
-60
-661316
- Code Issues 7 Pull requests 0 Actions Projects 0 Wiki Security 0 Insights
-surge/wb_ad.js
- goose optimize
-6e6c890 14 hours ago
-@yichahucha@primovist
-183 lines (173 sloc)  5.78 KB
-
 /*
 README：https://github.com/yichahucha/surge/tree/master
  */
@@ -202,15 +181,3 @@ function is_timeline_likerecommend(title) {
 function is_stream_video_ad(item) {
     return item.ad_state && item.ad_state == 1
 }
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
